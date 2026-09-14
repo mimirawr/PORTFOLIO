@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>USER_PROFILE.dat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="inner-page">
+
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+
+
+    <!--NAVBAR-->
+
+    <header class="navbar">
+
+        <a href="index.php" class="logo">
+            UNKNOWN_USER<span>.exe</span>
+        </a>
+
+        <button class="menu-button" onclick="openMenu()">
+            <span>MENU</span>
+            <span>☰</span>
+        </button>
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <div class="menu-overlay" id="menuOverlay">
+
+        <button class="menu-close" onclick="closeMenu()">×</button>
+
+        <div class="menu-inner">
+
+            <div class="menu-system">SYSTEM MENU // ACCESS LEVEL 01</div>
+
+            <a href="index.php">
+                <span>01</span> HOME
+            </a>
+
+            <a href="about.php">
+                <span>02</span> ABOUT
+            </a>
+
+            <a href="resume.php">
+                <span>03</span> RESUME
+            </a>
+
+            <a href="projects.php">
+                <span>04</span> PROJECTS
+            </a>
+
+            <a href="contact.php">
+                <span>05</span> CONTACT
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <main class="page-shell">
+
+        <div class="page-topbar">
+
+            <span>/SYSTEM/USER_PROFILE.dat</span>
+            <span>ACCESS LEVEL: PUBLIC</span>
+
+        </div>
+
+
+        <section class="profile-file">
+
+            <div class="file-titlebar">
+
+                <span>USER_PROFILE.dat</span>
+                <span>[OPEN]</span>
+
+            </div>
+
+
+            <div class="profile-content">
+
+                <div class="profile-image-area">
+
+                    <div class="profile-photo">
+
+                        <span>IMAGE</span>
+                        <small>PROFILE_PHOTO</small>
+
+                    </div>
+
+                    <div class="profile-status">
+
+                        <span class="status-dot"></span>USER ACTIVE
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-information">
+
+                    <div class="classified">PERSONAL FILE // 001</div>
+
+                    <h1>ABOUT ME</h1>
+
+                    <p class="large-text">
+
+                        I'm a final-year Multimedia student from the German-Malaysian Institute with an interest in creating digital experiences through games, design and interactive media.
+
+                    </p>
+
+                    <p>
+
+                        I enjoy programming games and bringing my ideas to life through code. Whether it's creating animations, interactive UI elements, or other gameplay features, seeing my code work as intended always brings me joy. I am still learning and improving my design skills, but I love the process of creating something of my own.
+
+
+                    </p>
+
+
+                    <div class="profile-data">
+
+                        <div>
+                            <span>FIELD</span>
+                            <strong>MULTIMEDIA</strong>
+                        </div>
+
+                        <div>
+                            <span>STATUS</span>
+                            <strong>FINAL YEAR</strong>
+                        </div>
+
+                        <div>
+                            <span>LOCATION</span>
+                            <strong>RAWANG</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTERESTS -->
+
+        <section class="data-section">
+
+            <div class="section-heading">
+
+                <span>/USER/INTERESTS/</span>
+                <span>04 ENTRIES</span>
+
+            </div>
+
+
+            <div class="interest-terminal">
+
+                <div class="terminal-line">
+                    > LOADING USER INTERESTS...
+                </div>
+
+                <div class="terminal-line">
+                    > DATA FOUND.
+                </div>
+
+                <br>
+
+                <div class="interest-row">
+                    <span>01</span>
+                    <strong>GAME DEVELOPMENT</strong>
+                </div>
+
+                <div class="interest-row">
+                    <span>02</span>
+                    <strong>PROGRAMMING</strong>
+                </div>
+
+                <div class="interest-row">
+                    <span>03</span>
+                    <strong>DIGITAL ART & DESIGN</strong>
+                </div>
+
+                <div class="interest-row">
+                    <span>04</span>
+                    <strong>CREATIVE PROJECTS</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="page-navigation">
+
+            <a href="resume.php" class="system-button">OPEN RESUME →</a>
+            <a href="projects.php" class="system-button primary">VIEW PROJECTS →</a>
+
+        </div>
+
+    </main>
+
+
+    <div class="floating-error" id="floatingError">FILE_READ_ERROR</div>
+    <div class="creepy-message" id="creepyMessage">USER PROFILE ACCESSED.</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
